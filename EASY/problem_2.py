@@ -7,6 +7,7 @@ For example, if our input was [1, 2, 3, 4, 5], the expected output would be
 
 Follow-up: what if you can’t use division?'''
 
+
 def product(array):
     products_array = []
     for i in range(len(array)):
@@ -16,8 +17,9 @@ def product(array):
                 result = result * array[x]
         products_array.append(result)
     return products_array
-        
+
 
 array = [1, 2, 3, 4, 5]
 
-print(product(array))
+if __name__ == '__main__':
+    print(product(array))
